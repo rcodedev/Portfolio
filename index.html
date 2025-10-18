@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <meta name="description"
+        content="Professional portfolio showcasing modern web development projects, creative solutions, and innovative digital experiences.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="scrollToTop()">Portfolio</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                <li><a href="#contact" class="btn btn-primary" onclick="closeMenu()">Hire Me</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="badge">Welcome to my portfolio</div>
+            <h1>Hi, I'm Rahul</h1>
+            <p>A passionate Java Full Stack Development</p>
+            <p>I’m a Computer Science student at RRIT College, Bengaluru, skilled in Java, Spring Boot, HTML, CSS, JavaScript and SQL.
+                I enjoy creating modern, responsive, and efficient web applications.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">↓</div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <p>I'm a passionate developer who loves creating impactful digital solutions. With expertise in modern web
+                technologies, I bring ideas to life through code.</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">💻</div>
+                <h3>Clean Code</h3>
+                <p>Writing maintainable and scalable code following best practices</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>Creating intuitive and visually appealing user interfaces</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🚀</div>
+                <h3>Performance</h3>
+                <p>Building fast, optimized applications for the best user experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="background: rgba(139, 92, 246, 0.05);">
+        <div class="section-header">
+            <h2>Skills & Expertise</h2>
+            <p>Technologies and tools I work with</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem;">Frontend</h3>
+                <div>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+
+                </div>
+            </div>
+            <div class="card">
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem;">Backend</h3>
+                <div>
+                    <span class="skill-tag">JDBC</span>
+                    <span class="skill-tag">Hibernate</span>
+                    <span class="skill-tag">Spring Boot</span>
+                    <span class="skill-tag">Servlets</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem;">Tools</h3>
+                <div>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Eclipse</span>
+                    <span class="skill-tag">VS Code</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <p>Some of my recent work</p>
+        </div>
+        <div class="grid">
+            <div class="card project-card">
+                <div class="project-gradient" style="background: linear-gradient(135deg, #3b82f6, #06b6d4);"></div>
+                <h3>Smart Login & Signup System</h3>
+                <p>A responsive authentication system using HTML, CSS, and JavaScript with local storage support.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-buttons">
+                    <button class="btn btn-outline">Code</button>
+                    <button class="btn btn-primary">Live Demo</button>
+                </div>
+            </div>
+            <div class="card project-card">
+                <div class="project-gradient" style="background: linear-gradient(135deg, #8b5cf6, #ec4899);"></div>
+                <h3>Portfolio Website</h3><br><br>
+                <p>A personal portfolio showcasing my skills, projects, and contact details with a modern design.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-buttons">
+                    <button class="btn btn-outline">Code</button>
+                    <button class="btn btn-primary">Live Demo</button>
+                </div>
+            </div>
+            <div class="card project-card">
+                <div class="project-gradient" style="background: linear-gradient(135deg, #8b5cf6, #3b82f6);"></div>
+                <h3>Employee Management System</h3>
+                <p>A full-stack e-commerce solution with payment integration and admin dashboard</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">MySQL</span>
+                </div>
+                <div class="project-buttons">
+                    <button class="btn btn-outline">Code</button>
+                    <button class="btn btn-primary">Live Demo</button>
+                </div>
+            </div>
+            <div class="card project-card">
+                <div class="project-gradient" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);"></div>
+                <h3>Student Management System</h3>
+                <p>A CRUD web app to manage student records using Spring Boot and MySQL.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS </span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">MySQL</span>
+                </div>
+                <div class="project-buttons">
+                    <button class="btn btn-outline">Code</button>
+                    <button class="btn btn-primary">Live Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background: rgba(139, 92, 246, 0.05);">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Let's work together on your next project</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Contact Information</h3>
+                <a href="mailto:rahul819723@gmail.com" class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope" style="color: #f9fafa;"></i></div>
+                    <div>
+                        <p style="color: var(--text-muted); font-size: 0.875rem;">Email</p>
+                        <p>rahul819723@gmail.com.com</p>
+                    </div>
+                </a>
+                <a href="tel:+91 8197237271" class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-phone-volume" style="color: #ecedee;"></i></div>
+                    <div>
+                        <p style="color: var(--text-muted); font-size: 0.875rem;">Phone</p>
+                        <p>+91 8197237271</p>
+                    </div>
+                </a>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-location-dot" style="color: #f0f2f4;"></i></div>
+                    <div>
+                        <p style="color: var(--text-muted); font-size: 0.875rem;">Location</p>
+                        <p>Bengaluru, Karnataka</p>
+                    </div>
+                </div>
+            </div>
+            <form onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3 class="logo" style="margin-bottom: 0.5rem;">Portfolio</h3>
+                <p style="color: var(--text-muted); font-size: 0.875rem;">Building the future, one line at a time</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/rcodedev" class="social-link" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github" style="color: #f9fafb;"></i></a>
+                <a href="https://www.linkedin.com/in/rahul-k-213ab4329/" class="social-link" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+                <a href="https://twitter.com" class="social-link" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter" style="color: #f1eef7;"></i></a>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.875rem;">© 2025 Rahul. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
